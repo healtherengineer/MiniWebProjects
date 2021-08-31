@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+        /* .outer-box{
+            width: 50%;
+            height: 100px;
+            background-color: black;
+            color: azure;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+            margin: 10px;
+            
+        } */
+
+
+        /* .outer-box{
+            width: 200px;
+            height: 200px;
+            background-color: #a6a6a6;
+            position: relative;
+            top: 20px;
+            left: 20px;
+
+        }
+        .inner-box{
+            width: 25%;
+            height: 25%;
+            background-color: blue;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        } */
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .container {
+            width: 450px;
+            height: 320px;
+            border: 1px solid black;
+            margin: 50px;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            box-shadow: 3px 1px #888888;
+        }
+
+        .photo {
+            width: 100%;
+            height: 100%;
+            position: relative;
+          
+        }
+
+        .name {
+            position: absolute;
+            bottom: 5px;
+            left: 5px;
+            display: inline-block;
+            background-color: black;
+            color: azure;
+            padding: 5px;
+            text-align: center;
+            z-index: 1;
+        }
+
+        .name:hover {
+            opacity: 0.8;
+            /* background-color: azure;
+            color: black; */
+        }
+    </style>
+</head>
+
+<body style="height: 2000px;">
+    <!-- <div class="outer-box">
+        asd
+        <div class="inner-box">
+
+        </div>
+    </div> -->
+
+    <!-- <div class="outer-box">
+        <h2>Header</h2>
+    </div> -->
+    <div class="container">
+        <div class="photo">
+            <img src="https://www.w3schools.com/w3images/avatar_hat.jpg" alt="Profile Photo" width="100%" height="100%">
+            <span class="name">
+                <h3>Jane Doe</h3>
+            </span>
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

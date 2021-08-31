@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Example</title>
+</head>
+
+<body>
+<style>
+    table{
+        height: 100%;
+        width: 100%;
+    }
+    table,tr,td,th{
+      border: 1px solid black;
+      border-collapse: collapse;
+      text-align: center;
+      
+  }
+table thead tr th{
+    border-collapse: collapse;
+    color: yellow;
+    background-color: teal;
+  
+}
+tr th:hover{
+    background-color: yellow;
+    color: teal;
+}
+tr td{
+    border: 1px solid tomato;
+    text-align: center;
+    padding: 15px;
+    color: green;
+    background-color: lightblue;
+    
+} 
+ tr td:hover{
+    color: lightblue;
+    background-color: green;
+}
+tbody tr td:hover {
+    color: lightblue;
+    background-color: green;
+}
+
+
+
+</style>
+    <table>
+
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Country</th>
+                <th>English Level</th>
+            </tr>
+        </thead>
+
+        <tbody>
+           <tr class="row">
+               <td>Julia Broweczki</td>
+               <td>Poland</td>
+               <td>B2(Intermediate)</td>
+           </tr>
+           <tr class="row">
+            <td>Julia Siudak</td>
+            <td>Poland</td>
+            <td>B1(Pre-Intermediate)</td>
+        </tr>
+        <tr class="row">
+            <td>Lilian</td>
+            <td>Mozambic</td>
+            <td>Native</td>
+        </tr>
+        <tr class="row">
+            <td>Bade Koltuk</td>
+            <td>Turkey</td>
+            <td>B2(Intermediate)</td>
+        </tr>
+
+
+        </tbody>
+
+    </table>
+
+
+</body>
+
+</html>

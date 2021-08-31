@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            margin: 5px;
+            margin-top: 0px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #FFFFFF;
+            text-align: center;
+            padding: 10px;
+            box-shadow:2px 2px 12px rgba(0,0,0,0.3);
+
+        }
+        .logoandlinks{
+            display: flex;
+            margin-left: 20px;
+            align-items: center;
+        }
+        .logo{
+            margin-right: 250px;
+            color: red;
+            opacity: 0.6;
+          
+           
+        }
+        .links ul {
+            display: flex;
+            justify-content: space-between;
+        }
+        .links ul li{
+            list-style: none;
+            margin: 10px;
+        }
+        .links ul li a{
+            text-decoration: none;
+            padding: 15px;
+            color: rgba(0,0,0,0.8);
+        }
+        .links ul li a:hover{
+            background: #a6a6a6;
+      
+       
+   
+        }
+        .searchbar{
+            font-size: 1rem;
+            margin-right: 10px;
+            background: #000;
+            color: azure;
+            padding: 5px;
+            border-radius: 24px;
+        }
+        .search_input{
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color:transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+    }
+    
+    /* searchbar hover olduğunda search input bu özellikleri alsın */
+    .searchbar:hover > .search_input{
+    padding: 0 5px;
+    width: 130px;
+    /* caret color sets color of the insertion caret (imleç) */
+    caret-color:#2ed573;
+    transition: width 0.4s linear;
+    }
+    /* searchbar hover olduğunda search ico bu özellikleri alsın */
+
+    .searchbar:hover > .search_icon{
+    background: #2ed573;
+    color: black;
+    }
+
+    .search_icon{
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:#fff;
+    text-decoration:none;
+    transition:0.4s;  
+    }
+    @media(max-width:768px){
+        .container{
+            flex-direction: column;
+           font-size: 1.5rem;
+         
+        }
+        .logo{
+            margin: 0;
+        }
+        .links{
+            overflow: hidden;
+        }
+        .links ul li a{
+            padding: 0px;
+        }
+        .logoandlinks{
+            flex-direction: column;
+          
+        }
+
+    }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="logoandlinks">
+            <div class="logo">
+                <h2 style="font-style: italic;">healtherengineer</h2>
+            </div>
+            
+            <div class="links">
+                <ul>
+                    <li> <a href="#"> About Us</a></li>
+                    <li> <a href="#"> Services</a></li>
+                    <li> <a href="#" data-toggle="dropdown"> Contact</a></li>
+                </ul>
+            </div>
+    
+        </div>
+
+        
+        <div class="searchbar">
+            <input type="text" class="search_input" placeholder="Search...">
+            <a href="#" class="search_icon"> <i class="fas fa-search"></i></a>
+           
+        </div>
+
+
+    </div>
+
+</body>
+</html>

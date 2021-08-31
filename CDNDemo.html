@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>-CDN Demo-</title>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: arial, x-locale-body, sans-serif;
+            letter-spacing: -.0027777778rem;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            font-size: 100%;
+            line-height: 1.75;
+        }
+
+        .container {
+            margin-top: 52px;
+            background: #83BFFF;
+            background-image: url('https://developer.mozilla.org/static/media/home-masthead-background.4306d252.svg');
+            width: 100%;
+            height: auto;
+            text-align: center;
+            padding: 75px 48px 48px;
+
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: 0 auto;
+
+        }
+
+        .title {
+            opacity: 0.8px;
+            display: inline-block;
+            margin: 0 auto;
+            padding: 12px;
+            background-color: #000000;
+            opacity: 0.1px;
+            color: white;
+            font-weight: 400;
+            margin: 0 auto 24px;
+
+            font-family: zillaslab, palatino, "Palatino Linotype", serif;
+            letter-spacing: .035rem;
+            line-height: 1.2;
+          
+
+        }
+
+        .list {
+            display: flex;
+            justify-content: space-around;
+            list-style-type: none;
+            height: 50%;
+            width: 100%;
+         
+
+        }
+        ul.list li{
+            width: 33%;
+        }
+
+        ul.list li a {
+            text-decoration: none;
+            color: black;
+            border-bottom: 2px solid #000000;
+            padding: 12px 0;
+            width: 100%;
+       
+        }
+
+        ul.list li a:hover {
+            text-decoration: underline;
+            margin-right: 5px;
+        }
+        
+
+        ul li a i{
+            margin-left: 20px;
+        }
+        @media(max-width:878px){
+            .container{
+               
+            padding-left: 0px;
+            padding-right: 0px;
+            }
+           
+            .content{
+              
+                width: 100%;
+            }
+            .list{
+                flex-direction: column;
+                display: block;
+              
+            }
+           
+            ul.list li{
+           
+                width: 100%;
+            }
+          
+           
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <h1 class="title">Resources for developers, by developers.</h1>
+            <ul class="list">
+                <li> <a href="#"> Web Technologies <i class="fas fa-arrow-right"></i></a></li>
+                <li> <a href="#"> Learn Web Develompent<i class="fas fa-arrow-right"></i></a></li>
+                <li> <a href="#">Developer Tools<i class="fas fa-arrow-right"></i></a></li>
+
+            </ul>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
